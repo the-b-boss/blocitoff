@@ -1,2 +1,24 @@
-<h1>Blocitoff</h1>
-<p>A self-destructing to-do list to keep you focused on the things that really matter.</p>
+<br>
+<div class="jumbotron">
+  <h1>Bloccitoff</h1>
+  <p>A self-destructing to-do list to keep you focused on the things that really matter.</p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Sign up</h2>
+    <p>Create your free account to start using Blocitoff immediately.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Create to-do's</h2>
+    <p>Create unlimited to-do items and mark them off as you complete them.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>7 days or bust</h2>
+    <p>To-do items will self-destruct after 7 days so you better get started immediately.</p>
+  </div>
+</div>
