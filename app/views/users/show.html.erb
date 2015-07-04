@@ -1,9 +1,18 @@
+<div class="user-profile">
+  <center>
+    <h1>My To Do List:</h1>
+    <p> ... </p>
+  </center>
+</div>
+
 <div class="row">
   <div class="col-md-8">
-      <div class="user-profile">
-        <h1><u>Your Profile:</u></h1>
-        <h3 class="media-heading">Username: <%= @user.name %></h3>
-      </div>
+    <div class='js-items'>
+      <%= render partial: 'items/item', collection: @items %>
+    </div>
+    <div class='new-item'>
+      <%= render partial: 'items/form' %>
     </div>
   </div>
 </div>
+

@@ -13,7 +13,8 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-#   @todo = @user.todo.visible_to(current_user) 
+    @items = @user.items
+    @item = Item.new
   end
 
 
